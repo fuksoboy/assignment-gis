@@ -66,7 +66,7 @@ V súbore `server/PersistManager.php`, ktorý je zodpovedný za parametrizované
 
 Server poskytuje dva endpointy, ktoré na základe parametrov, teda interakcie klienta s aplikáciou, vyskladajú príslušný dopyt nad databázou.
 
-####Nájdi cyklotrasy na základe preferencií/konfigurácie
+#### Nájdi cyklotrasy na základe preferencií/konfigurácie
 
 `GET /server/RequestManager.php?action=search`
 
@@ -196,7 +196,7 @@ ORDER BY
    distance
 ```
 
-####Nájdi prekážky na cyklotrasách v kontexte preferencií/konfigurácie
+#### Nájdi prekážky na cyklotrasách v kontexte preferencií/konfigurácie
 
 `GET /server/RequestManager.php?action=findBarriers`
 
