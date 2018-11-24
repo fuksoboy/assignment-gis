@@ -72,7 +72,7 @@ Server poskytuje dva endpointy, ktoré na základe parametrov, teda interakcie k
 
 **Príklad parametrov a query pri scenári:**
 *Nájdi cyklotrasy v určitej blízkosti od definovaného stanoviska, ktoré sú určitého povrchu a nachádzajú sa v blízkosti vody*
-######Parametre:
+**Parametre:**
 ```
 {  
    "surfaceClausule":[  
@@ -91,7 +91,7 @@ Server poskytuje dva endpointy, ktoré na základe parametrov, teda interakcie k
    "longest":"false"
 }
 ```
-######Query:
+**Query:**
 ```
 SELECT
    ST_AsGeoJSON(ST_Transform(A.way, 4326)) AS geometry,
@@ -122,7 +122,7 @@ ORDER BY
 
 **Príklad parametrov a query pri scenári:**
 *Nájdi cyklotrasy v určitej blízkosti od definovaného stanoviska, ktoré sú určitého povrchu a nachádzajú sa v blízkosti vody, pričom zobraz len N najdlhších súvislých trás (súvislá trasa = súhrn trás, ktoré sú vzájomne prepojené)*
-######Parametre:
+**Parametre:**
 ```
 {  
    "surfaceClausule":[  
@@ -141,7 +141,7 @@ ORDER BY
    "longest":"true"
 }
 ```
-######Query:
+**Query:**
 ```
 WITH longest AS 
 (
@@ -202,7 +202,7 @@ ORDER BY
 
 **Príklad parametrov a query pri scenári:**
 *Nájdi bariéry pre cyklotrasy v určitej blízkosti od definovaného stanoviska, ktoré sú určitého povrchu a nachádzajú sa v blízkosti vody*
-######Parametre:
+**Parametre:**
 ```
 {  
    "surfaceClausule":[  
@@ -221,7 +221,7 @@ ORDER BY
    "longest":"false"
 }
 ```
-######Query:
+**Query:**
 ```
 SELECT
    ST_AsGeoJSON(ST_Transform(A.way, 4326)) AS geometry,
@@ -252,7 +252,7 @@ WHERE
 
 **Príklad parametrov a query pri scenári:**
 *Nájdi bariéry pre cyklotrasy v určitej blízkosti od definovaného stanoviska, ktoré sú určitého povrchu a nachádzajú sa v blízkosti vody, pričom zobraz len `N` najdlhších súvislých trás (súvislá trasa = súhrn trás, ktoré sú vzájomne prepojené)*
-######Parametre:
+**Parametre:**
 ```
 {  
    "surfaceClausule":[  
@@ -271,7 +271,7 @@ WHERE
    "longest":"true"
 }
 ```
-######Query:
+**Query:**
 ```
 WITH longest AS 
 (
